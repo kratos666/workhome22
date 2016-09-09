@@ -56,6 +56,14 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
+	var _Header = __webpack_require__(172);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	var _Footer = __webpack_require__(173);
+
+	var _Footer2 = _interopRequireDefault(_Footer);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -78,8 +86,294 @@
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					null,
-					'Comments'
+					{ className: 'wrapper' },
+					_react2.default.createElement(
+						'header',
+						null,
+						_react2.default.createElement(_Header2.default, null)
+					),
+					_react2.default.createElement(
+						'section',
+						null,
+						_react2.default.createElement(
+							'div',
+							{ className: 'block-wrapper' },
+							_react2.default.createElement(
+								'div',
+								{ id: 'features', className: 'flex' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'features-item flex' },
+									_react2.default.createElement('i', { className: 'setting' }),
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Editable Theme'
+									),
+									_react2.default.createElement(
+										'p',
+										null,
+										'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.'
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'features-item flex' },
+									_react2.default.createElement('i', { className: 'star' }),
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Flat Design'
+									),
+									_react2.default.createElement(
+										'p',
+										null,
+										'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.'
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'features-item flex' },
+									_react2.default.createElement('i', { className: 'eart' }),
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Reach Your Audience'
+									),
+									_react2.default.createElement(
+										'p',
+										null,
+										'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.'
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'block-wrapper bg-color-1' },
+							_react2.default.createElement(
+								'div',
+								{ id: 'get-notified', className: 'flex' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'block-form' },
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Get Notified Of Any Updates!'
+									),
+									_react2.default.createElement(
+										'p',
+										null,
+										'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta deserunt blanditiis dignissimos ex voluptas, perferendis iure natus consequuntur fugit dolor, earum error! Consequuntur enim maxime blanditiis provident magni corporis asperiores.'
+									),
+									_react2.default.createElement(
+										'form',
+										{ action: 'post' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'input-style' },
+											_react2.default.createElement('input', { type: 'text', placeholder: 'Emale Address' }),
+											_react2.default.createElement(
+												'button',
+												{ type: 'submit' },
+												'Notify'
+											)
+										)
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'player' },
+									_react2.default.createElement('video', { src: 'https://www.youtube.com/watch?feature=player_embedded&v=q2fEXkg0py4', controls: 'controls' })
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'block-wrapper' },
+							_react2.default.createElement(
+								'div',
+								{ id: 'testimonials', className: 'flex' },
+								_react2.default.createElement(
+									'blockquote',
+									null,
+									'"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed totam quos ea sint neque debitis eum, animi nemo assumenda dicta impedit facilis in, consequuntur beatae quod! Officiis suscipit, dolores. Aperiam."'
+								),
+								_react2.default.createElement(
+									'span',
+									null,
+									'Jane Hunt'
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'slides' },
+									_react2.default.createElement(
+										'ul',
+										{ className: 'flex' },
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', width: '50px', height: '50px', alt: '' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/people', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/people', alt: '', width: '50px', height: '50px' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
+										)
+									)
+								),
+								_react2.default.createElement(
+									'h1',
+									null,
+									'Say Hi & Get in Touch'
+								),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.'
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'social flex' },
+									_react2.default.createElement(
+										'ul',
+										{ className: 'flex' },
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('a', { href: '', className: 'twit' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('a', { href: '', className: 'face' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('a', { href: '', className: 'uho' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('a', { href: '', className: 'googl' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('a', { href: '', className: 'in' })
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement('a', { href: '', className: 'tube' })
+										)
+									)
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						'footer',
+						{ className: 'bg-color-1' },
+						_react2.default.createElement(_Footer2.default, null)
+					)
 				);
 			}
 		}]);
@@ -21459,6 +21753,205 @@
 
 	module.exports = ReactDOMNullInputValuePropHook;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 172 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Header = function (_React$Component) {
+		_inherits(Header, _React$Component);
+
+		function Header() {
+			_classCallCheck(this, Header);
+
+			return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+		}
+
+		_createClass(Header, [{
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"div",
+					{ className: "header-wrap flex" },
+					_react2.default.createElement(
+						"div",
+						{ className: "logo-block flex" },
+						_react2.default.createElement(
+							"a",
+							{ href: "#", className: "logo" },
+							"Notify",
+							_react2.default.createElement(
+								"strong",
+								null,
+								"."
+							)
+						),
+						_react2.default.createElement(
+							"p",
+							{ className: "slogan" },
+							"A great new free psd theme to showcase ",
+							_react2.default.createElement("br", null),
+							" your new application."
+						),
+						_react2.default.createElement(
+							"ul",
+							{ className: "select-os flex" },
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement("a", { href: "#", className: "mac-os" })
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement("a", { href: "#", className: "andr-os" })
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement("a", { href: "#", className: "win-os" })
+							)
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "phone" },
+						_react2.default.createElement("div", { className: "pic-phone" })
+					)
+				);
+			}
+		}]);
+
+		return Header;
+	}(_react2.default.Component);
+
+	exports.default = Header;
+
+/***/ },
+/* 173 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Footer = function (_React$Component) {
+		_inherits(Footer, _React$Component);
+
+		function Footer() {
+			_classCallCheck(this, Footer);
+
+			return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+		}
+
+		_createClass(Footer, [{
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"div",
+					{ className: "footer-wrap" },
+					_react2.default.createElement(
+						"ul",
+						{ className: "flex" },
+						_react2.default.createElement(
+							"li",
+							null,
+							_react2.default.createElement(
+								"a",
+								{ href: "#" },
+								"Contact"
+							)
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							_react2.default.createElement(
+								"a",
+								{ href: "#" },
+								"Download"
+							)
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							_react2.default.createElement(
+								"a",
+								{ href: "#" },
+								"Press"
+							)
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							_react2.default.createElement(
+								"a",
+								{ href: "#" },
+								"Email"
+							)
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							_react2.default.createElement(
+								"a",
+								{ href: "#" },
+								"Support"
+							)
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							_react2.default.createElement(
+								"a",
+								{ href: "#" },
+								"Privacy Policy"
+							)
+						)
+					)
+				);
+			}
+		}]);
+
+		return Footer;
+	}(_react2.default.Component);
+
+	exports.default = Footer;
 
 /***/ }
 /******/ ]);
