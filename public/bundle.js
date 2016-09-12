@@ -64,6 +64,14 @@
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
+	var _Slider = __webpack_require__(174);
+
+	var _Slider2 = _interopRequireDefault(_Slider);
+
+	var _SocialItem = __webpack_require__(175);
+
+	var _SocialItem2 = _interopRequireDefault(_SocialItem);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -84,6 +92,37 @@
 		_createClass(MainBox, [{
 			key: 'render',
 			value: function render() {
+				var slider = [{
+					'link': 'http://lorempicsum.com/nemo/50/50/1'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/6'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/4'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/1'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/5'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/1'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/3'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/1'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/2'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/3'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/1'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/2'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/3'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/1'
+				}, {
+					'link': 'http://lorempicsum.com/nemo/50/50/2'
+				}];
 				return _react2.default.createElement(
 					'div',
 					{ className: 'wrapper' },
@@ -211,111 +250,9 @@
 									_react2.default.createElement(
 										'ul',
 										{ className: 'flex' },
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', width: '50px', height: '50px', alt: '' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/people', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/people', alt: '', width: '50px', height: '50px' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('img', { src: 'http://lorempixel.com/50/50/cats', alt: '', width: '50px', height: '50px' })
-										)
+										slider.map(function (item, index) {
+											return _react2.default.createElement(_Slider2.default, { key: index, link: item.link });
+										})
 									)
 								),
 								_react2.default.createElement(
@@ -334,36 +271,9 @@
 									_react2.default.createElement(
 										'ul',
 										{ className: 'flex' },
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('a', { href: '', className: 'twit' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('a', { href: '', className: 'face' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('a', { href: '', className: 'uho' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('a', { href: '', className: 'googl' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('a', { href: '', className: 'in' })
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement('a', { href: '', className: 'tube' })
-										)
+										social.map(function (item, index) {
+											return _react2.default.createElement(_SocialItem2.default, { 'soc-url': item.url, 'soc-name': item.name, key: index });
+										})
 									)
 								)
 							)
@@ -21952,6 +21862,104 @@
 	}(_react2.default.Component);
 
 	exports.default = Footer;
+
+/***/ },
+/* 174 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SliderItem = function (_React$Component) {
+		_inherits(SliderItem, _React$Component);
+
+		function SliderItem() {
+			_classCallCheck(this, SliderItem);
+
+			return _possibleConstructorReturn(this, (SliderItem.__proto__ || Object.getPrototypeOf(SliderItem)).apply(this, arguments));
+		}
+
+		_createClass(SliderItem, [{
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"li",
+					null,
+					_react2.default.createElement("img", { src: this.props.link, width: "50px", height: "50px", alt: "" })
+				);
+			}
+		}]);
+
+		return SliderItem;
+	}(_react2.default.Component);
+
+	exports.default = SliderItem;
+
+/***/ },
+/* 175 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SocialItem = function (_React$Component) {
+		_inherits(SocialItem, _React$Component);
+
+		function SocialItem() {
+			_classCallCheck(this, SocialItem);
+
+			return _possibleConstructorReturn(this, (SocialItem.__proto__ || Object.getPrototypeOf(SocialItem)).apply(this, arguments));
+		}
+
+		_createClass(SocialItem, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'li',
+					null,
+					_react2.default.createElement('a', { href: this.props.soc - url, className: this.props.soc - name })
+				);
+			}
+		}]);
+
+		return SocialItem;
+	}(_react2.default.Component);
+
+	exports.default = SocialItem;
 
 /***/ }
 /******/ ]);
