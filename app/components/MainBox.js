@@ -1,59 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Firebase from 'firebase';
 import Header from './Header';
 import Footer from './Footer';
-import SliderItem from './Slider';
+import SliderItem from './SliderItem';
 import SocialItem from './SocialItem';
+import ReactMixin from 'react-mixin';
+import ReactFire from 'reactfire';
 
+var config = {
+	apiKey: "PLfP7pGmTTrFGagZt8UFI78x3UwuN4z7ysjUhAnI",
+	databaseURL:"https://hillel-23.firebaseio.com"
+}
+Firebase.initializeApp(config);
 class MainBox extends React.Component{
+	constructor(){
+		super();
+		this.state ={
+			slider: []
+		}
+	}
+	componentDidMount(){
+		this.bindAsArray(Firebase.database().ref().child("slider"), "slider");
+	}
 	render(){
-		const slider = [
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/1'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/6'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/4'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/1'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/5'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/1'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/3'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/1'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/2'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/3'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/1'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/2'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/3'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/1'
-			},
-			{
-				'link': 'http://lorempicsum.com/nemo/50/50/2'
-			}
-		]
 		return (
 			<div className="wrapper">
 			<header><Header/></header>
@@ -102,7 +72,7 @@ class MainBox extends React.Component{
 						<div className="slides">
 							<ul className="flex">
 								{
-									slider.map((item, index) => <SliderItem key={index} link={item.link} />)
+									this.state.slider.map((item, index) => <SliderItem key={index} link={item.link} />)
 								}
 							</ul>
 						</div>
@@ -111,9 +81,7 @@ class MainBox extends React.Component{
 							</p>
 							<div className="social flex">
 								<ul className="flex">
-									{
-										social.map((item, index) =><SocialItem soc-url={item.url} soc-name={item.name} key={index} />)
-									}
+
 								</ul>
 							</div>
 						</div>
@@ -126,4 +94,6 @@ class MainBox extends React.Component{
 		)
 	}
 }
-ReactDOM.render(<MainBox />, document.getElementById('app'))
+ReactMixin(MainBox.prototype, ReactFire);
+ReactDOM.render(<MainBox />, document.getElementById('app'));
+

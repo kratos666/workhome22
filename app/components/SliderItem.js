@@ -1,4 +1,8 @@
 import React from 'react';
+import ReactMixin from 'react-mixin';
+import ReactFire from 'reactfire';
+import Firebase from 'firebase';
+
 
 export default class SliderItem extends React.Component{
 	render(){
@@ -7,3 +11,4 @@ export default class SliderItem extends React.Component{
 		);
 	}
 }
+ReactMixin(SliderItem.prototype, ReactFire);
