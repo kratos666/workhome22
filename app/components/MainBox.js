@@ -6,23 +6,15 @@ import Footer from './Footer';
 import SliderItem from './SliderItem';
 import SocialItem from './SocialItem';
 import ReactMixin from 'react-mixin';
-import ReactFire from 'reactfire';
 
 var config = {
 	apiKey: "PLfP7pGmTTrFGagZt8UFI78x3UwuN4z7ysjUhAnI",
-	databaseURL:"https://hillel-23.firebaseio.com"
+	databaseURL: "https://hillel-23.firebaseio.com"
 }
 Firebase.initializeApp(config);
+
+
 class MainBox extends React.Component{
-	constructor(){
-		super();
-		this.state ={
-			slider: []
-		}
-	}
-	componentDidMount(){
-		this.bindAsArray(Firebase.database().ref().child("slider"), "slider");
-	}
 	render(){
 		return (
 			<div className="wrapper">
@@ -69,21 +61,11 @@ class MainBox extends React.Component{
 						<div id="testimonials" className="flex">
 							<blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed totam quos ea sint neque debitis eum, animi nemo assumenda dicta impedit facilis in, consequuntur beatae quod! Officiis suscipit, dolores. Aperiam."</blockquote>
 							<span>Jane Hunt</span>
-						<div className="slides">
-							<ul className="flex">
-								{
-									this.state.slider.map((item, index) => <SliderItem key={index} link={item.link} />)
-								}
-							</ul>
-						</div>
+							<SliderItem />
 							<h1>Say Hi & Get in Touch</h1>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.
 							</p>
-							<div className="social flex">
-								<ul className="flex">
-
-								</ul>
-							</div>
+							<SocialItem />
 						</div>
 					</div>
 				</section>
@@ -94,6 +76,5 @@ class MainBox extends React.Component{
 		)
 	}
 }
-ReactMixin(MainBox.prototype, ReactFire);
 ReactDOM.render(<MainBox />, document.getElementById('app'));
 

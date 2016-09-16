@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/kratos666/workhome22#readme",
   "dependencies": {
-    "firebase": "^3.3.2",
+    "firebase": "^3.4.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-mixin": "^2.0.2",
